@@ -38,4 +38,28 @@ $(document).ready(function() {
         $('.header-menu').fadeOut();
     });
 
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        vertical:true,
+        asNavFor: '.slider-for',
+        dots: false,
+        focusOnSelect: true,
+        verticalSwiping:true,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    vertical: false,
+                }
+            },
+        ]
+    });
 });
