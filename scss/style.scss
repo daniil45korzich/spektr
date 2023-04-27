@@ -128,7 +128,12 @@ header{
     font-weight: 100;
     font-size: 18px;
     @media screen and (max-width: 1000px) {
-      font-size: 12px;
+      font-size: 10px;
+      font-weight: 400;
+      
+      br {
+        display: none;
+      }
     }
   }
 }
@@ -1213,7 +1218,7 @@ header{
   span {
     width: 25px;
     height: 3px;
-    background: #000;
+    background: #1468b6;
     display: block;
   }
 
